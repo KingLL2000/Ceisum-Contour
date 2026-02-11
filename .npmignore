@@ -1,0 +1,29 @@
+# Build outputs
+/dist
+/node_modules
+
+# Development files
+/example
+/src
+/vite.config.js
+
+# IDE files
+.vscode
+.idea
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+npm-debug.log*
+
+# Test files
+*.test.js
+*.spec.js
+
+# Configuration files (keep package.json, README.md, LICENSE)
+.eslintrc
+.prettierrc
+.gitignore

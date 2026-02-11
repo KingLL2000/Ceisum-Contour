@@ -1,14 +1,58 @@
 {
-  "name": "ceisum-contour",
-  "private": true,
-  "version": "0.0.0",
+  "name": "cesium-contour",
+  "version": "1.0.0",
+  "description": "A Cesium.js contour visualization library for creating elevation contours and heatmaps",
   "type": "module",
+  "main": "./dist/cesium-contour.umd.cjs",
+  "module": "./dist/cesium-contour.js",
+  "exports": {
+    ".": {
+      "import": "./dist/cesium-contour.js",
+      "require": "./dist/cesium-contour.umd.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "cesium",
+    "contour",
+    "visualization",
+    "gis",
+    "elevation",
+    "heatmap",
+    "3d",
+    "webgl"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cesium-contour.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/cesium-contour/issues"
+  },
+  "homepage": "https://github.com/yourusername/cesium-contour#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build",
+    "release": "npm run build && npm publish"
+  },
+  "peerDependencies": {
+    "cesium": "^1.138.0",
+    "d3": "^7.9.0",
+    "d3-contour": "^4.0.2"
   },
   "devDependencies": {
-    "vite": "^5.4.10"
+    "vite": "^5.4.10",
+    "vite-plugin-cesium": "^1.2.23"
+  },
+  "dependencies": {
+    
   }
 }
