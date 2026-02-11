@@ -12,6 +12,8 @@
 
 - 从网格数据生成等值面
 - 从网格数据生成等值线
+![Image of polygon pontour](./example/img/contourPolygon.png)
+![Image of polygon pontour](./example/img/contourPolyline.png)
 
 ## 使用方法
 

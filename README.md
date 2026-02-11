@@ -12,7 +12,8 @@ A grid data contour visualization library for Cesium.js. Uses [d3-contour](https
 
 - Generate contour polygon from grid data
 - Generate contour polyline from grid data
-
+![Image of polygon pontour](./example/img/contourPolygon.png)
+![Image of polygon pontour](./example/img/contourPolyline.png)
 ## USE
 
 ```bash
