@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.138/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.138/Build/Cesium/Cesium.js"></script>
-  <script src="../dist/cesium-contour.umd.cjs"></script>
+  <script src="../dist/cesium-contour.iife.js"></script>
 </head>
 <style>
   html,
@@ -23,10 +23,8 @@
   <div id="cesiumContainer"></div>
   <script type="module">
     // Your access token can be found at: https://ion.cesium.com/tokens.
-    // Replace `your_access_token` with your Cesium ion access token.
     import { gridData } from './gridData.js';
-    // import { ContourPolygonPrimitive, ContourPolylinePrimitive } from '../dist/cesium-contour.umd.cjs';
-    //  import { ContourPolygonPrimitive, ContourPolylinePrimitive } from '../src/Cesium-Contour/index.js';
+     // This key is mined for this tutorial. Do not use in production. thanks.
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ZmZhNzcwYi0yN2RiLTRmNTktYjFjMC1kNDY4NGFlOTBmNDQiLCJpZCI6MjgzMTgwLCJpYXQiOjE3NDE2Nzg4ODF9.pbl-yRJD_G7P8RBOIT_Oum_TOjm1Ho_HBoEwqnchSQ4';
 
     // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
